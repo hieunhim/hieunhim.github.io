@@ -5,10 +5,16 @@ body{
 span{
 	font-weight: 400;
 }
+.col-md-4.logo-left{
+    padding: 0;
+}
+.col-md-4.logo-right{
+    padding: 0 7px 0;
+}
 .container .row.logo{
   border-bottom: solid 1px #d4d4d4;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding:3% 0;
+  margin: 0;
 }
 .shopping{
     height: 15px; 
@@ -35,32 +41,71 @@ span{
     margin-right: 20px;
     cursor: pointer;
 }
-.logo1{margin-left: 35%;}
-
-/*end logo*/
-.btn.btn-default{
-	border: none;
+.logo1{margin-left: 35%;}/*end logo*/
+/*menu*/
+.mega-dropdown {
+  position: static !important;
 }
-.navbar-nav {
-    margin-left:275px;
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
 }
-.navbar.navbar-default{
-	background-color: white;
-	border: none;
+.nav > li > a {
+    padding: 15px 35px;
+    color: #161918;
 }
-.navbar-default .navbar-nav > li{
-	padding: 0 10px;
+.navbar-inverse .navbar-nav .open a{
+    background: #fff;
+    color: #161918;
 }
-.navbar-default .navbar-nav > li > a{
-    padding-top: 25px;
-	color: #161918;
-	font-size: 17px;
-	font-weight: 500;
+.navbar-inverse .navbar-nav .open a:hover{
+    background: #fff;
+    color: #ff3546;
 }
-.navbar-default .navbar-nav > li > a:hover{
-	color: #ef476e;
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
 }
- 
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  color: #222;
+  padding: 3px 5px;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+}
+.mega-dropdown-menu .dropdown-header {
+  font-size: 18px;
+  color: #ff3546;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+}
+.navbar-collapse{
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 150px;
+}
+.navbar-inverse{
+    border: none;
+    padding: 0;
+    background: #fff;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: #161918;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.dropdown ul li a:hover{
+    color: #ff3546;
+}
+.dropdown-toggle:hover{
+    background: none;
+}
+/*end menu*/
 .col-md-3.content{
 	padding-top: 110px;
 }
@@ -75,28 +120,27 @@ span{
 }
 .row.content1{
 	padding-bottom: 50px;
+    margin: 0;
 }
-.row.content2 .col-md-12{
+.row.content2{
 	background-color: #f2f2f2;
-	padding: 10px;
+    margin: 0;
 }
-.col-md-12{
-	padding: 0;
-}
-.row.content2 .col-md-12{
+.row.content2{
     margin-bottom: 30px;
 }
-.row.content2 .col-md-12 .col-md-6.right{
-    text-align: right; line-height: 36px;
+.row.content2 .col-md-6.right{
+    text-align: right;
+    line-height: 50px;
 }
-.row.content2 .col-md-12 .col-md-6.right a{
+.row.content2 .col-md-6.right a{
     color: #272727;text-decoration: none;
 }
-.row.content2 .col-md-12 .col-md-6.right a:hover{
-    color: #ef476e;
+.row.content2 .col-md-6.right a:hover{
+    color: #ff3546;
 }
 .row.content2 .col-md-6.right .glyphicon.glyphicon-menu-down{
-    margin-left: 5px; margin-top: 2px;
+    margin-left: 5px;
 }
 .row.content2 .col-md-6.right .dropdown-menu li a{
     display: inline-block; 
@@ -107,21 +151,23 @@ span{
     color: #989898; 
     font-size: 13px;
 }
-.row.content3 .col-md-12{
+.row.content3{
 	padding: 10px 0;
-	margin-bottom: 50px;
+    margin: 0;
 }
-
 .row.products{
     padding-top: 30px;
 	text-align: center;
+}
+.row.products .col-md-4{
+    padding: 15px;
 }
 .row.products a{
 	text-decoration: none;
 	color: #161918;
 }
 .row.products a:hover{
-	color: #ef476e;
+	color: #ff3546;
 }
 .giaban{
 	font-size: 16px;
@@ -227,18 +273,17 @@ span{
 .row.content3 .glyphicon.glyphicon-remove{
     color: #fff;
 }
-.row.content4 .col-md-12{
+.row.content4{
 	background-color: #f2f2f2;
-	padding: 10px;
-	margin-top: 50px;
-	margin-bottom: 90px;
+    margin: 50px 0 90px 0;
 }
 .col-md-4.left, .col-md-6.left{
-    line-height: 36px;
+    line-height: 50px;
 }
 .pagination{
     margin:0; 
     float: right;
+    padding-top: 4px;
 }
 .pagination ul li a {
     color: black;
@@ -254,10 +299,10 @@ span{
 	color: white;
 }
 .pagination > .active > a{
-    background-color: black;
+    background-color: #000;
 }
 .pagination > .active > a:hover{
-    background-color: black;
+    background-color: #000;
 }
 .container-fluid{
 	background-color: #fafafa;
@@ -408,7 +453,7 @@ span{
 }
 .accordion .glyphicon-menu-down{
     float: right; 
-    margin-right: 15%;
+    margin-right: 35px;
 }
 .menuleft{
     margin-bottom: 60px;
@@ -643,6 +688,12 @@ transform: scale(1); }
 .sidebar-left .panel{
     background: transparent;
 }
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+/*
 @media screen and (max-width: 1024px){
     .navbar-nav {
         margin-left:205px;
@@ -658,14 +709,11 @@ transform: scale(1); }
     .row.content2 .col-md-12{
         height: 40px;
     }
-    .row.content2 .col-md-12 .col-md-6.left{
+    .row.content2 .col-md-6.left{
         line-height: normal;
     }
-    .row.content2 .col-md-12 .col-md-6.right{
+    .row.content2 .col-md-6.right{
         line-height: normal;
-    }
-    .row.content4 .col-md-12 {
-        height: 45px;
     }
     .pagination ul li a {
         padding: 3px 14px;
@@ -700,14 +748,11 @@ transform: scale(1); }
     .box img {
         width: 50%;
     }
-    .row.content2 .col-md-12 .col-md-6.right{
+    .row.content2 .col-md-6.right{
         margin-top: -18px;    
     }
-    .row.content4 .col-md-12 .col-md-8.pagination{
+    .row.content4 .col-md-8.pagination{
         margin-top: -22px;    
-    }
-    .row.content4 .col-md-12 {
-        margin-bottom: 50px;
     }
     .btnsubmit {
         width: 25%;
@@ -775,10 +820,10 @@ transform: scale(1); }
     .logo1{
         display: none;
     }
-    .row.content2 .col-md-12 .col-md-6.right{
+    .row.content2 .col-md-6.right{
         margin-top: 0;    
     }
-    .row.content4 .col-md-12 .col-md-8.pagination{
+    .row.content4 .col-md-8.pagination{
         margin-top: 0;
     }
     .col-md-4.left {
@@ -788,14 +833,11 @@ transform: scale(1); }
     .row.content2 .col-md-12 {
         height: 60px;
     }
-    .row.content2 .col-md-12 .col-md-6.right{
+    .row.content2 .col-md-6.right{
         text-align: left;
     }
     .box img {
         width: 80%;
-    }
-    .row.content4 .col-md-12 {
-        height: 70px;
     }
     .nextback{
         display: inline-block;
@@ -838,7 +880,7 @@ transform: scale(1); }
     }
 }
 @media screen and (max-width: 360px){
-    .row.content4 .col-md-12 .col-md-8.pagination {
+    .row.content4 .col-md-8.pagination {
     padding: 0;
     }
 }
@@ -856,4 +898,5 @@ transform: scale(1); }
         padding: 9px 21%;
     }
 }
+*/
 
