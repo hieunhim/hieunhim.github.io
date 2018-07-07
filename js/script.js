@@ -1,5 +1,6 @@
+//menu
 function openNav() {
-    document.getElementById("mySidenavTop").style.width = "250px";
+    document.getElementById("mySidenavTop").style.width = "280px";
   }
 
 function closeNav() {
@@ -18,21 +19,21 @@ $(document).ready(function(){
         }
     );
 });
-jQuery(document).ready(function($) {
-    "use strict";
-// Fiter......................................................................................
-    $('.button2').on('click', function(){
-    $("#mySidenavv").css("width","300px");
-    $(".collapsee").css("visibility","visible");
-});
+// jQuery(document).ready(function($) {
+//     "use strict";
+// // Fiter......................................................................................
+//     $('.button2').on('click', function(){
+//     $("#mySidenavv").css("width","300px");
+//     $(".collapsee").css("visibility","visible");
+// });
 
-$('.closebtn').on('click', function(){
-    $("#mySidenavv").css("width","0");
-    $(".collapsee").css("visibility","hidden");
-});
-});
-$('#btn1').on('click', function(){
-    var x= $("#btn1").attr("aria-expanded");
+// $('.closebtn').on('click', function(){
+//     $("#mySidenavv").css("width","0");
+//     $(".collapsee").css("visibility","hidden");
+// });
+// });
+$('#btn-left1').on('click', function(){
+    var x= $("#btn-left1").attr("aria-expanded");
     if(x=="true"){
         $(".up1").css("display","none");
         $(".down1").css("display","inline-block");
@@ -42,14 +43,14 @@ $('#btn1').on('click', function(){
          $(".up1").css("display","inline-block");
     }
 });
-$('#btn4').on('click', function(){
-    var x= $("#btn4").attr("aria-expanded");
+$('#btn-left2').on('click', function(){
+    var x= $("#btn-left2").attr("aria-expanded");
     if(x=="true"){
-        $(".up4").css("display","none");
-        $(".down4").css("display","inline-block");
+        $(".up2").css("display","none");
+        $(".down2").css("display","inline-block");
     }
     else{
-         $(".down4").css("display","none");
-         $(".up4").css("display","inline-block");
+         $(".down2").css("display","none");
+         $(".up2").css("display","inline-block");
     }
 });
