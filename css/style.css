@@ -62,6 +62,10 @@ span{
     background: #fff;
     color: #ff3546;
 }
+.navbar-inverse .navbar-nav .open a:focus{
+    background: #fff;
+    color: #ff3546;
+}
 .mega-dropdown-menu > li > ul {
   padding: 0;
   margin: 0;
@@ -77,6 +81,8 @@ span{
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
+  background: #fff;
+    color: #ff3546;
 }
 .mega-dropdown-menu .dropdown-header {
   font-size: 18px;
@@ -87,7 +93,7 @@ span{
 .navbar-collapse{
     padding-right: 0;
     padding-left: 0;
-    margin-left: 150px;
+    margin-left: 15%;
 }
 .navbar-inverse{
     border: none;
@@ -106,8 +112,9 @@ span{
     background: none;
 }
 /*end menu*/
-.col-md-3.content{
-	padding-top: 110px;
+.col-md-3.collapsee{
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 .col-md-9.content{
 	padding-top: 100px;
@@ -261,7 +268,7 @@ span{
 }
 .clean a:hover{
     text-decoration:none; 
-    color:#ef476e;
+    color:#ff5346;
 }
 .casual{
     background-color: black; 
@@ -400,60 +407,41 @@ span{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.accordion {
-    color: black;
-    cursor: pointer;
-    /*padding: 18px;*/
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 14px;
-    transition: 0.4s;
-    background-color: white;
-    font-family: Montserrat;
+.sidemenu ul li{
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.sidemenu .menu-left-li{
+    padding-bottom: 20px;
     font-weight: 500;
 }
-
-.active, .accordion:hover {
-    background-color: white; 
+.sidemenu .menu-left-li a:hover, active{
+    color: #ff5346;
 }
-.panel {
-    background-color: white;
-    overflow: hidden;
-    margin-bottom: 0;
-    border: none;
-    -webkit-box-shadow:none;
-    max-height: 0;
-    transition: max-height 0.3s ease-out;
+.sidemenu .menu-left-li ul li{
+    padding-top: 15px;
 }
-.panel ul li {
-    list-style: none; 
-    margin-top: 10px;
-}
-.panel ul li a{
-    text-decoration: none; 
-    color: #929292; 
-    line-height: 20px; 
+.sidemenu .menu-left-li ul li a{
     font-size: 12px;
+    color: #929292;
+    text-transform: none;
+    font-weight: normal;
 }
-.panel ul li a:hover{
-    color: black;
+.sidemenu .menu-left-li ul li a:hover{
+    color: #000;
 }
-.menu-left, .menu-left2{
-    margin-bottom: 15px;
+.sidemenu ul li a:hover{
+  text-decoration: none;
 }
-.menu-left2 a{
-    font-size: 14px; 
-    color: black; 
-    font-weight: 500;
+.sidemenu ul li a{
+  color: #000;
 }
-.menu-left2 a:hover{
-    text-decoration: none;
-}
-.accordion .glyphicon-menu-down{
-    float: right; 
-    margin-right: 35px;
+.sidemenu ul li a i{
+    font-weight: bold;
+  float: right;
+  margin-right: 70px;
 }
 .menuleft{
     margin-bottom: 60px;
@@ -640,7 +628,7 @@ transform: scale(1); }
 }
 /*end search*/
 /*menu*/
-.sidenav {
+.sidenavtop {
     height: 100%;
     width: 0;
     position: fixed;
@@ -652,7 +640,7 @@ transform: scale(1); }
     transition: 0.5s;
     padding-top: 50px;
 }
-.sidenav .sidebar-menu a {
+.sidenavtop .sidebar-menu a {
     padding: 15px 8px 15px 30px;
     text-decoration: none;
     font-size: 20px;
@@ -662,13 +650,13 @@ transform: scale(1); }
     line-height: 30px;
 }
 
-.sidenav .sidebar-menu a:hover {
+.sidenavtop .sidebar-menu a:hover {
     background-color:#929292; 
     color: white; 
     transition: 0.3s;
 }
 
-.sidenav .glyphicon.glyphicon-remove {
+.sidenavtop .glyphicon.glyphicon-remove {
     position: absolute;
     top: 20px;
     right: 25px;
@@ -677,22 +665,75 @@ transform: scale(1); }
 }
 
 /*end menu*/
-.sidebar-left{
-    margin-left: 30px;
-    margin-top: 50px;
-    padding-bottom: 30px;
+.collapsee{
+    visibility: visible;
+    z-index: auto;
+    transition: all .3s ease;
 }
-.sidebar-left .accordion{
-    background: transparent;
+.collapsee .closebtn {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 36px;
+    margin-left: 50px;
+    visibility: hidden;
+    color: #2b2b2b;
 }
-.sidebar-left .panel{
-    background: transparent;
+.button2{
+    visibility: hidden;
+    font-size: 18px !important;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #fff;
+    margin: 30px 15px;
+    background: #000;
+}
+.main{
+    display: none;
+}
+.closebtn:hover{
+    text-decoration: none;
 }
 @media screen and (min-width: 1200px){
     .container{
         width: 1140px;
     }
 }
+@media screen and (max-width: 1199px){
+    .navbar-collapse {
+        margin-left: 5%;
+    }
+}
+@media  screen and (max-width: 991px){
+    .navbar-inverse{
+        display: none;
+    }
+    .main{
+        display: block;
+    }
+  .collapsee{ visibility:hidden;  height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:#fff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;}
+    .collapsee .closebtn{
+        visibility: visible;
+    }
+    .button2{
+        visibility: visible;
+    }
+    .col-md-9.content {
+        padding-top: 30px;
+    }
+}
+
+
+
 /*
 @media screen and (max-width: 1024px){
     .navbar-nav {
