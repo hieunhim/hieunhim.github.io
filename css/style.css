@@ -1,4 +1,5 @@
 *{margin: 0; padding: 0}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
 	font-family: Montserrat;
 }
@@ -366,8 +367,7 @@ span{
     float: right;
     width: 30%; 
     color: black; 
-    font-weight: 500; 
-    font-family: Montserrat;
+    font-weight: 500;
     text-transform: uppercase;
 }
 .btnsubmit:hover{
@@ -555,7 +555,7 @@ transform: scale(1); }
   background: #f6f6f6;
   left: inherit;
   right: 0;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 15px;
   min-width: 300px;
 }
@@ -645,7 +645,7 @@ transform: scale(1); }
  /*end shoppingcart*/
 /*search*/
 .dropdown-menu.timkiem{
-    margin: 10% 0 0;
+    margin: 5% 0 0;
     padding: 10px;
     -webkit-box-shadow:none;
     box-shadow:none;
