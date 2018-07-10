@@ -5,9 +5,9 @@ body{
 span{
 	font-weight: 400;
 }
-/*.down-top1, .down-top2, .down-top2-1, .down-top2-2, .down-top2-3, .down-top3, .down-top4, .down-top5, .down-top6{
+.fa-angle-down.down1, .fa-angle-down.down2,.fa-angle-down.down-top1, .fa-angle-down.down-top2, .fa-angle-down.down-top2-1, .fa-angle-down.down-top2-2, .fa-angle-down.down-top2-3, .fa-angle-down.down-top3, .fa-angle-down.down-top4, .fa-angle-down.down-top5, .fa-angle-down.down-top6{
     display: inline-block;
-}*/
+}
 .fa-angle-up.up1, .fa-angle-up.up2, .fa-angle-up.up-top1, .fa-angle-up.up-top2, .fa-angle-up.up-top2-1, .fa-angle-up.up-top2-2, .fa-angle-up.up-top2-3, .fa-angle-up.up-top3, .fa-angle-up.up-top4, .fa-angle-up.up-top5, .fa-angle-up.up-top6{
     display: none;
 }
@@ -76,6 +76,18 @@ span{
     background: #fff;
     color: #ff3546;
 }
+.navbar-inverse .navbar-nav .mega-menu a:hover{
+    color: #ff3546;
+    margin-left: 5px;
+    transition: all .5s;
+    background: transparent;
+}
+.navbar-inverse .navbar-nav .mega-dropdown .mega-dropdown-menu a:hover{
+    color: #ff3546;
+    margin-left: 5px;
+    transition: all .5s;
+    background: transparent;
+}
 .mega-dropdown-menu > li > ul {
   padding: 0;
   margin: 0;
@@ -91,8 +103,13 @@ span{
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
     text-decoration: none;
-    background: red;
     color: #ff3546;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #ff5346;
+}
+.navbar-inverse .navbar-nav > li > a:focus{
+    color: #ff5346;
 }
 .mega-dropdown-menu .dropdown-header {
   font-size: 18px;
@@ -109,7 +126,7 @@ span{
 .navbar-inverse{
     border: none;
     padding: 0;
-    background: #fff;
+    background: transparent;
     margin-bottom: 0;
 }
 .navbar-inverse .navbar-nav > li > a{
@@ -117,17 +134,20 @@ span{
     text-transform: uppercase;
     font-weight: bold;
 }
-.dropdown ul li a:hover{
-    color: #ff3546;
-}
-.dropdown-toggle:hover{
-    background: none;
-}
 .mega-menu, .mega-dropdown-menu{
     border-radius: 0;
     border: 1px solid #eee;
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+.navbar-inverse .navbar-nav > li.dropdown:hover > a, 
+.navbar-inverse .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-inverse .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: #ff5346;
+    color: #fff;
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 /*end menu*/
 .col-md-3.collapsee{

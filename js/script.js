@@ -26,23 +26,28 @@ $('.closebtn').on('click', function(){
     $(".collapsee").css("visibility","hidden");
 });
 });
+
+
 //mega menu
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-});
+// $(document).ready(function(){
+//     $(".dropdown").hover(            
+//         function() {
+//             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("fast");
+//             $(this).toggleClass('open');        
+//         },
+//         function() {
+//             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("fast");
+//             $(this).toggleClass('open');       
+//         }
+//     );
+// });
 //logo-buy-search
-// $(".logo-buy , .logo-search").on("click", function() {
-//         $(this).parent().find('.top , .timkiem').slideToggle('fast');
-//     });
+$(".logo-buy").on("click", function() {
+        $(this).parent().find('.top').slideToggle('fast');
+    });
+$(".logo-search").on("click", function() {
+        $(this).parent().find('.timkiem').slideToggle('fast');
+    });
 //icon-menu
 $('#btn-left1').on('click', function(){
     var x= $("#btn-left1").attr("aria-expanded");
