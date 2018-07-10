@@ -1,10 +1,18 @@
 *{margin: 0; padding: 0}
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
 	font-family: Montserrat;
 }
 span{
 	font-weight: 400;
+}
+/*.down-top1, .down-top2, .down-top2-1, .down-top2-2, .down-top2-3, .down-top3, .down-top4, .down-top5, .down-top6{
+    display: inline-block;
+}*/
+.fa-angle-up.up1, .fa-angle-up.up2, .fa-angle-up.up-top1, .fa-angle-up.up-top2, .fa-angle-up.up-top2-1, .fa-angle-up.up-top2-2, .fa-angle-up.up-top2-3, .fa-angle-up.up-top3, .fa-angle-up.up-top4, .fa-angle-up.up-top5, .fa-angle-up.up-top6{
+    display: none;
+}
+.ac-filter{
+    margin-right: 10px;
 }
 .col-md-4.logo-left{
     padding: 0;
@@ -62,6 +70,7 @@ span{
 .navbar-inverse .navbar-nav .open a:hover{
     background: #fff;
     color: #ff3546;
+    display: block;
 }
 .navbar-inverse .navbar-nav .open a:focus{
     background: #fff;
@@ -76,20 +85,21 @@ span{
 }
 .mega-dropdown-menu > li > ul > li > a {
   display: block;
-  color: #222;
+  color: #161918;
   padding: 3px 5px;
 }
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
-  text-decoration: none;
-  background: #fff;
+    text-decoration: none;
+    background: red;
     color: #ff3546;
 }
 .mega-dropdown-menu .dropdown-header {
   font-size: 18px;
-  color: #ff3546;
+  color: #161918;
   padding: 5px 60px 5px 5px;
   line-height: 30px;
+  font-weight: 500;
 }
 .navbar-collapse{
     padding-right: 0;
@@ -100,6 +110,7 @@ span{
     border: none;
     padding: 0;
     background: #fff;
+    margin-bottom: 0;
 }
 .navbar-inverse .navbar-nav > li > a{
     color: #161918;
@@ -111,6 +122,12 @@ span{
 }
 .dropdown-toggle:hover{
     background: none;
+}
+.mega-menu, .mega-dropdown-menu{
+    border-radius: 0;
+    border: 1px solid #eee;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
 /*end menu*/
 .col-md-3.collapsee{
@@ -142,7 +159,8 @@ span{
     line-height: 50px;
 }
 .row.content2 .col-md-6.right a{
-    color: #272727;text-decoration: none;
+    color: #272727;
+    text-decoration: none;
 }
 .row.content2 .col-md-6.right a:hover{
     color: #ff3546;
@@ -212,8 +230,6 @@ span{
 	min-width: 250px;
     border-radius: 0px;
 }
-
-
 .filter{
     padding-bottom: 30px;
 }
@@ -338,7 +354,8 @@ span{
     font-size: 16px;
 }
 .row.mangxahoi i:hover{
-    color: black;
+    color: #ff5346;
+    transition: all .3s;
 }
 .mxh{
     width: 35px; 
@@ -371,7 +388,7 @@ span{
     text-transform: uppercase;
 }
 .btnsubmit:hover{
-    background-color:#929292; 
+    background-color:#ff5346; 
     color: white; 
     transition: 0.3s;
 }
@@ -385,7 +402,7 @@ span{
     color: #929292;
 }
 .bottom1 ul li a:hover{
-    color: black; 
+    color: #ff5346; 
     transition: 0.3s;
 }
 .list-tittle{
@@ -443,6 +460,10 @@ span{
     font-weight: bold;
   float: right;
   margin-right: 70px;
+}
+.button2{
+    font-size:30px;
+    cursor:pointer;
 }
 .menuleft{
     margin-bottom: 60px;
@@ -558,6 +579,7 @@ transform: scale(1); }
   margin-top: 5%;
   padding: 15px;
   min-width: 300px;
+  border-radius: 0;
 }
 .dropdown-menu.top a:hover{
     text-decoration: none;
@@ -770,18 +792,24 @@ transform: scale(1); }
     .main{
         display: block;
     }
-  .collapsee{ visibility:hidden;  height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color:#fff;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;}
+  .collapsee{ 
+        visibility:hidden;  
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:#fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;}
     .collapsee .closebtn{
         visibility: visible;
+        right: 30px;
+    }
+    .sidemenu ul li a i {
+        margin-right: 20px;
     }
     .button2{
         visibility: visible;

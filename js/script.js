@@ -1,12 +1,32 @@
-//menu
-function openNav() {
-    document.getElementById("mySidenavTop").style.width = "280px";
-  }
+//sidebar menu-top
+jQuery(document).ready(function($) {
+    "use strict";
+    $('.logo-menu').on('click', function(){
+    $("#mySidenavTop").css("width","300px");
+    $("#mySidenavTop").css("transition","0.3s");
+    $(".sidenavtop").css("visibility","visible");
+});
 
-function closeNav() {
-    document.getElementById("mySidenavTop").style.width = "0";
-}
+$('.close-sidebar').on('click', function(){
+    $("#mySidenavTop").css("width","0");
+    $(".sidenavtop").css("visibility","hidden");
+});
+});
+//sidebar filter-content
+jQuery(document).ready(function($) {
+    "use strict";
+    $('.button2').on('click', function(){
+    $("#mySidenavv").css("width","280px");
+    $("#mySidenavv").css("transition","0.3s");
+    $(".collapsee").css("visibility","visible");
+});
 
+$('.closebtn').on('click', function(){
+    $("#mySidenavv").css("width","0");
+    $(".collapsee").css("visibility","hidden");
+});
+});
+//mega menu
 $(document).ready(function(){
     $(".dropdown").hover(            
         function() {
@@ -19,29 +39,11 @@ $(document).ready(function(){
         }
     );
 });
-(function(){
- 
-  $("#cart").on("click", function() {
-    $(".top").fadeToggle( "slow");
-  });
-  
-})();
-$(".logo-buy , .logo-search").on("click", function() {
-        $(this).parent().find('.top , .timkiem').slideToggle('fast');
-    });
-jQuery(document).ready(function($) {
-    "use strict";
-// Fiter......................................................................................
-    $('.button2').on('click', function(){
-    $("#mySidenavv").css("width","300px");
-    $(".collapsee").css("visibility","visible");
-});
-
-$('.closebtn').on('click', function(){
-    $("#mySidenavv").css("width","0");
-    $(".collapsee").css("visibility","hidden");
-});
-});
+//logo-buy-search
+// $(".logo-buy , .logo-search").on("click", function() {
+//         $(this).parent().find('.top , .timkiem').slideToggle('fast');
+//     });
+//icon-menu
 $('#btn-left1').on('click', function(){
     var x= $("#btn-left1").attr("aria-expanded");
     if(x=="true"){
