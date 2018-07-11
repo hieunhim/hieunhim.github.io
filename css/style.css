@@ -143,8 +143,7 @@ span{
 .navbar-inverse .navbar-nav > li.dropdown:hover > a, 
 .navbar-inverse .navbar-nav > li.dropdown:hover > a:hover,
 .navbar-inverse .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: #ff5346;
-    color: #fff;
+    color: #ff5346;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -762,7 +761,7 @@ transform: scale(1); }
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #f2f2f2;
+    background-color: #0c0c0c;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 40px;
@@ -773,18 +772,19 @@ transform: scale(1); }
     right: 15px;
     font-size: 20px;
     cursor: pointer;
+    color: rgba(255,255,255,.8);
 }
 .list-group-item {
   border: none;
-  background: #ddd;
-  border-top: 1px solid #FFF;
+  background: #0c0c0c;
+  border-top: 1px solid rgba(92,92,92,.23);
 }
 .list-group-item i{
   float: right;
   font-size: 18px;
 }
 .list-group-item a{
-  color: #000;
+  color: rgba(255,255,255,.8);
   cursor: pointer;
   font-size: 18px;
 }
@@ -798,6 +798,7 @@ transform: scale(1); }
 }
 .list-group-item ul li{
   padding: 10px 0;
+  border-top: 1px solid rgba(92,92,92,.23);
 }
 .list-group-item ul li a{
   font-size: 16px;
@@ -809,7 +810,9 @@ transform: scale(1); }
 .list-group-item ul li ul li a{
   font-size: 14px;
 }
-
+.list-group-item:first-child{
+    border-radius:0;
+}
 /*end menu*/
 .collapsee{
     visibility: visible;
