@@ -28,6 +28,7 @@ $('.closebtn').on('click', function(){
 });
 
 
+
 //mega menu
 // $(document).ready(function(){
 //     $(".dropdown").hover(            
@@ -42,12 +43,12 @@ $('.closebtn').on('click', function(){
 //     );
 // });
 //logo-buy-search
-$(".logo-buy").on("click", function() {
-        $(this).parent().find('.top').slideToggle('fast');
-    });
-$(".logo-search").on("click", function() {
-        $(this).parent().find('.timkiem').slideToggle('fast');
-    });
+// $(".logo-buy").on("click", function() {
+//         $(this).parent().find('.top').slideToggle('fast');
+//     });
+// $(".logo-search").on("click", function() {
+//         $(this).parent().find('.timkiem').slideToggle('fast');
+//     });
 //icon-menu
 $('#btn-left1').on('click', function(){
     var x= $("#btn-left1").attr("aria-expanded");
