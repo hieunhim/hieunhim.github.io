@@ -846,6 +846,7 @@ transform: scale(1); }
 .logo-mobi{
     display: none;
     padding-top: 30px;
+    text-align: center;
 }
 .basel {
     content: " ";
