@@ -178,31 +178,32 @@ li.dropdown:hover > .dropdown-menu {
 .row.content2{
     margin-bottom: 30px;
 }
-.row.content2 .col-md-6.right{
+.row.content2 .col-md-6.price{
     text-align: right;
     line-height: 50px;
 }
-.row.content2 .col-md-6.right a{
+.row.content2 .col-md-6.price a{
     color: #272727;
     text-decoration: none;
 }
-.row.content2 .col-md-6.right a:hover{
+.row.content2 .col-md-6.price a:hover{
     color: #ff3546;
 }
-.row.content2 .col-md-6.right .glyphicon.glyphicon-menu-down{
+.row.content2 .col-md-6.price .glyphicon.glyphicon-menu-down{
     margin-left: 5px;
 }
-.row.content2 .col-md-6.right .dropdown-menu li a{
+.row.content2 .col-md-6.price .dropdown-menu li a{
     display: inline-block; 
     background-color: transparent;
     padding: 5px 45px;
 }
-.row.content2 .col-md-6.right span{
+.row.content2 .col-md-6.price span{
     color: #989898; 
     font-size: 13px;
 }
 .row.content3{
-	padding: 10px 0;
+	padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0;
 }
 .row.products{
@@ -242,7 +243,7 @@ li.dropdown:hover > .dropdown-menu {
 .textsanpham span{
 	line-height: 40px;
 }
-.row.content2 .col-md-6.right .dropdown-menu {
+.row.content2 .col-md-6.price .dropdown-menu {
 	right: -8px;
     margin:0;
     padding:0;
@@ -730,10 +731,9 @@ transform: scale(1); }
 .dropdown-menu.timkiem{
     margin: 5% 0 0;
     padding: 10px;
-    -webkit-box-shadow:none;
-    box-shadow:none;
     transition: all .3s;
     min-width: 310px;
+    border-radius: 0;
 }
 .timkiem input{
   width: 85%;
@@ -843,6 +843,10 @@ transform: scale(1); }
 .closebtn:hover{
     text-decoration: none;
 }
+.logo-mobi{
+    display: none;
+    padding-top: 30px;
+}
 @media screen and (min-width: 1200px){
     .container{
         width: 1140px;
@@ -851,6 +855,12 @@ transform: scale(1); }
 @media screen and (max-width: 1199px){
     .navbar-collapse {
         margin-left: 5%;
+    }
+    .logo1{
+        margin-left: 25%;
+    }
+    .sidemenu ul li a i {
+        margin-right: 30px;
     }
 }
 @media  screen and (max-width: 991px){
@@ -883,11 +893,156 @@ transform: scale(1); }
         visibility: visible;
     }
     .col-md-9.content {
-        padding-top: 30px;
+        padding-top: 15px;
+    }
+    .row.sub input {
+        width: 60%;
+    }
+    .btnsubmit{
+        width: 40%;
+    }
+    .logo1 {
+    margin-left: 15%;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .row.content2 .col-md-6.price {
+        line-height: 0;
+        margin-top:-35px;
+    }
+    .row.content2 .col-md-6.price .dropdown-menu {
+        line-height: 50px;
+        top:35px;
+    }
+    .pagination {
+        padding-top: 0;
+        margin-top: -21px;
+    }
+    .box img {
+        width: 50%;
+    }
+    .text-block {
+        left: 27%;
+    }
+    .row.sub input {
+        width: 75%;
+    }
+    .btnsubmit{
+        width: 25%;
+    }
+    .row.sub{
+        margin-bottom: 30px;
+    }
+    .img-bottom{
+        margin-left: 15%;
+    }
+    .bottom1{
+        margin-bottom: 30px;
+    }
+    .list-tittle {
+        margin-bottom: 10px;
+    }
+    .container.bottom {
+        padding-bottom: 30px;
+    }
+    .logo1 {
+        display: none;
+    }
+    .logo-mobi{
+        display: block;
     }
 }
-
-
+@media screen and (max-width: 650px){
+    .img-bottom{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 615px){
+    .pagination {
+        margin-top: 0;
+        padding-top: 0;
+        float: none;
+    }
+    .col-md-4.left{
+        text-align: center;
+    }
+    .col-md-8.pagination{
+        text-align: center;
+        padding:0;
+    }
+    .box img {
+        width: 60%;
+    }
+    .text-block {
+        left: 24%;
+    }
+}
+@media screen and (max-width: 590px){
+    .img-bottom{
+        display: none;
+    }
+    .text-bottom{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 515px){
+    .col-xs-3.bottom, .col-xs-4.bottom, .col-xs-5.bottom{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .row.content2 .col-md-6.price {
+        text-align: left;
+        margin-top: 0;
+        padding-bottom: 15px;
+    }
+    .row.content2 .col-md-6.price .dropdown-menu {
+        text-align: left;
+        left: 22px;
+    }
+    .row.content3{
+        padding-top: 80px;
+    }
+}
+@media screen and (max-width: 423px){
+    .pagination ul li a {
+        padding: 8px 15px;
+    }
+    .row.sub input {
+        width: 70%;
+    }
+    .btnsubmit{
+        width: 30%;
+    }
+    .box img {
+        width: 80%;
+    }
+    .text-block {
+        left: 15%;
+    }
+}
+@media screen and (max-width: 393px){
+    .pagination ul li a {
+        padding: 7px 14px;
+    }
+}
+@media screen and (max-width: 360px){
+    .pagination ul li a {
+        padding: 5px 12px;
+    }
+    .row.sub input {
+        width: 65%;
+    }
+    .btnsubmit{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 320px){
+    .pagination ul li a {
+        padding: 4px 9px;
+    }
+}
 
 /*
 @media screen and (max-width: 1024px){

@@ -28,7 +28,6 @@ $('.closebtn').on('click', function(){
 });
 
 
-
 //mega menu
 // $(document).ready(function(){
 //     $(".dropdown").hover(            
