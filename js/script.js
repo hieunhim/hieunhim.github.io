@@ -19,11 +19,15 @@ jQuery(document).ready(function($) {
     $("#mySidenavv").css("width","280px");
     $("#mySidenavv").css("transition","0.3s");
     $(".collapsee").css("visibility","visible");
+    $("#baselMobile").css("visibility","visible");
+    $("#baselMobile").css("opacity","1");
 });
 
 $('.closebtn').on('click', function(){
     $("#mySidenavv").css("width","0");
     $(".collapsee").css("visibility","hidden");
+    $("#baselMobile").css("visibility","hidden");
+    $("#baselMobile").css("opacity","0");
 });
 });
 
