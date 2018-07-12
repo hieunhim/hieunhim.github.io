@@ -913,7 +913,7 @@ transform: scale(1); }
     }
     .row.content2 .col-md-6.price .dropdown-menu {
         line-height: 50px;
-        top:35px;
+        top:29px;
     }
     .pagination {
         padding-top: 0;
@@ -998,12 +998,19 @@ transform: scale(1); }
         padding-bottom: 15px;
     }
     .row.content2 .col-md-6.price .dropdown-menu {
-        text-align: left;
-        left: 22px;
+    border: solid 1px #eee;
+    -webkit-box-shadow:0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow:0 6px 12px rgba(0, 0, 0, .175);
+    background-color: #fff;
+    min-width: 100px;
+    width: 175px;
+    text-align: left;
+    left: 58px;
     }
-    .row.content3{
-        padding-top: 80px;
+    .row.content2 .col-md-6.price .dropdown-menu li a {
+        padding-left: 9px;
     }
+    
 }
 @media screen and (max-width: 423px){
     .pagination ul li a {
