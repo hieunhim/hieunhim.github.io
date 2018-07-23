@@ -217,10 +217,10 @@ li.dropdown:hover > .dropdown-menu {
 }
 .row.products .col-md-4.mobi{
     clear: right;
+    float: left;
     background-color: red;
 }
 .row.products .col-md-4.mobi2{
-    float: left;
     background-color: blue;
 }
 .row.products a{
