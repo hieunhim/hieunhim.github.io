@@ -956,9 +956,6 @@ transform: scale(1); }
     .logo-mobi{
         display: block;
     }
-    .row.products .col-md-4{
-        width: 49%;
-    }
 }
 @media screen and (max-width: 650px){
     .img-bottom{
