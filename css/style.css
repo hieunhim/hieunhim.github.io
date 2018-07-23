@@ -214,8 +214,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 .row.products .col-md-4{
     padding: 15px;
-
-    clear: right;
+    width: 49%;
 }
 .row.products a{
 	text-decoration: none;
@@ -956,6 +955,9 @@ transform: scale(1); }
     }
     .logo-mobi{
         display: block;
+    }
+    .row.products .col-md-4{
+        width: 49%;
     }
 }
 @media screen and (max-width: 650px){
