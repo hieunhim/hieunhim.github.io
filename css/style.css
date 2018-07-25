@@ -2,17 +2,16 @@
 body{
 	font-family: Montserrat;
 }
-span{
-	font-weight: 400;
-}
 .fa-angle-down.down1, .fa-angle-down.down2,.fa-angle-down.down-top1, .fa-angle-down.down-top2, .fa-angle-down.down-top2-1, .fa-angle-down.down-top2-2, .fa-angle-down.down-top2-3, .fa-angle-down.down-top3, .fa-angle-down.down-top4, .fa-angle-down.down-top5, .fa-angle-down.down-top6{
     display: inline-block;
+    font-size: 12px;
 }
 .fa-angle-up.up1, .fa-angle-up.up2, .fa-angle-up.up-top1, .fa-angle-up.up-top2, .fa-angle-up.up-top2-1, .fa-angle-up.up-top2-2, .fa-angle-up.up-top2-3, .fa-angle-up.up-top3, .fa-angle-up.up-top4, .fa-angle-up.up-top5, .fa-angle-up.up-top6{
     display: none;
+    font-size: 12px;
 }
 .ac-filter{
-    margin-right: 10px;
+    margin-right: 7px;
 }
 .col-md-4.logo-left{
     padding: 0;
@@ -22,7 +21,7 @@ span{
 }
 .container .row.logo{
   border-bottom: solid 1px #d4d4d4;
-  padding:3% 0;
+  padding:36px 0 30px 0;
   margin: 0;
 }
 .shopping{
@@ -62,8 +61,11 @@ span{
     width: 100%;
 }
 .nav > li > a {
-    padding: 15px 35px;
+    padding: 25px 35px;
     color: #161918;
+}
+.navbar-nav > li > a{
+    line-height: normal;
 }
 .navbar-inverse .navbar-nav .open a{
     background: #fff;
@@ -97,10 +99,17 @@ span{
 .mega-dropdown-menu > li > ul > li {
   list-style: none;
 }
+.mega-menu > li > a{
+    font-size: 13px;
+    color: #161918;
+    font-weight: 500;
+}
 .mega-dropdown-menu > li > ul > li > a {
   display: block;
   color: #161918;
   padding: 3px 5px;
+  font-size: 13px;
+  font-weight: 500;
 }
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
@@ -114,16 +123,17 @@ span{
     color: #ff5346;
 }
 .mega-dropdown-menu .dropdown-header {
-  font-size: 18px;
-  color: #161918;
-  padding: 5px 60px 5px 5px;
-  line-height: 30px;
-  font-weight: 500;
+    font-size: 11px;
+    color: #161918;
+    padding: 5px 60px 5px 5px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .navbar-collapse{
     padding-right: 0;
     padding-left: 0;
-    margin-left: 15%;
+    margin-left: 165px;
 }
 .navbar-inverse{
     border: none;
@@ -134,7 +144,8 @@ span{
 .navbar-inverse .navbar-nav > li > a{
     color: #161918;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 11px;
 }
 .mega-menu, .mega-dropdown-menu{
     border-radius: 0;
@@ -157,17 +168,25 @@ li.dropdown:hover > .dropdown-menu {
 }
 /*end menu*/
 .col-md-3.collapsee{
-    padding-top: 100px;
+    padding-top: 115px;
     padding-bottom: 50px;
 }
 .col-md-9.content{
-	padding-top: 100px;
+	padding-top: 115px;
 }
 .row.content1 h1{
 	margin:0;
-	margin-bottom: 30px;
+    margin-left: -2px;
+	margin-bottom: 20px;
 	font-size: 32px; 
 	font-family: Montserrat;
+    font-weight: 400;
+    color: #000000;
+}
+.text-content{
+    font-size: 13px; 
+    font-weight: 500;
+    color: #000000;
 }
 .row.content1{
 	padding-bottom: 50px;
@@ -178,7 +197,7 @@ li.dropdown:hover > .dropdown-menu {
     margin: 0;
 }
 .row.content2{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .row.content2 .col-md-6.price{
     text-align: right;
@@ -186,13 +205,19 @@ li.dropdown:hover > .dropdown-menu {
 }
 .row.content2 .col-md-6.price a{
     color: #272727;
+    font-size: 13px;
+    font-weight: 500;
     text-decoration: none;
+    margin-right: 5px;
 }
 .row.content2 .col-md-6.price a:hover{
     color: #ff3546;
 }
 .row.content2 .col-md-6.price .glyphicon.glyphicon-menu-down{
-    margin-left: 5px;
+    margin-left: 7px;
+    font-size: 7px;
+    font-weight: 900;
+    top:0;
 }
 .row.content2 .col-md-6.price .dropdown-menu li a{
     display: inline-block; 
@@ -204,16 +229,22 @@ li.dropdown:hover > .dropdown-menu {
     font-size: 13px;
 }
 .row.content3{
-	padding-top: 10px;
-    padding-bottom: 10px;
     margin: 0;
 }
+.row.content3 a{
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 11px;
+}
+.row.content3 a:hover{
+    text-decoration: none;
+}
 .row.products{
-    padding-top: 30px;
+    padding-top: 20px;
 	text-align: center;
 }
 .row.products .col-md-4{
-    padding: 15px;
+    padding: 20px 15px;
     clear: none;
 }
 
@@ -232,23 +263,32 @@ li.dropdown:hover > .dropdown-menu {
 	text-decoration: line-through;
 	font-size: 13px;
 	color: #929292;
+    margin-left: 11px;
 }
 .text-block {
     width: 50px;
-    height: 35px;
+    height: 25px;
     position: absolute;
     top: 4%;
     left: 7%;
     background-color: #c55353;
-    color: white;
-    line-height: 35px;
+    color: #ffffff;
+    line-height: 25px;
+    font-size: 12px;
 }
-.textsanpham{padding-top: 30px; font-size: 16px;}
+.textsanpham{
+    padding-top: 23px; 
+    font-size: 14px;
+}
+.textsanpham a{
+    font-weight: 500;
+}
 .textsanpham span{
-	line-height: 40px;
+    position: relative;
+    top: 10px;
 }
 .row.content2 .col-md-6.price .dropdown-menu {
-	right: -8px;
+	right: -13px;
     margin:0;
     padding:0;
     text-align: right;
@@ -259,25 +299,27 @@ li.dropdown:hover > .dropdown-menu {
 	min-width: 250px;
     border-radius: 0px;
 }
+.row.content2 .col-md-6.price .dropdown-menu a:hover{
+    color: #ff5346;
+}
 .filter{
     padding-bottom: 30px;
 }
 .filter span{ 
     font-size: 14px;
     font-weight: 500;
+    color: #000000;
 }
 .left-top{
     padding-bottom: 60px;
 }
 .cate{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .theloai{
-    margin-bottom: 20px; 
-    font-size: 15px;
-}
-.theloai-box{
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    font-size: 14px;
+    font-weight: 500;
 }
 .mausac{
     font-size: 15px;
@@ -285,78 +327,94 @@ li.dropdown:hover > .dropdown-menu {
 .color{
     margin-bottom: 20px;
 }
-.color-box{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .color-box span{
     line-height: 25px;
+    font-size: 12px;
+    font-weight: 500;
 }
 .color1, .color2, .color3, .color4{
-    width: 25px; 
-    height: 25px; 
+    width: 18px; 
+    height: 18px; 
     float: left; 
     margin-right: 15px;
+    margin-top: 3px;
 }
 .color1{background-color: #f1e5d2;}
 .color2{background-color: #000;}
 .color3{background-color: #ebad29;}
-.color4{background-color: #fff;}
+.color4{background-color: #f6f6f6;}
 .clean{
-    width: 140px; 
-    height: 45px; 
+    width: 138px; 
+    height: 46px; 
     border: solid 1px black; 
-    line-height: 45px; 
+    line-height: 46px; 
     text-align: center; 
     text-transform: uppercase;
 }
 .clean a{
-    color: black;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
 }
 .clean a:hover{
     text-decoration:none; 
     color:#ff5346;
 }
 .casual{
-    background-color: black; 
-    color: white; 
+    background-color: #000000; 
+    color: #ffffff; 
     display: inline-block; 
-    padding: 10px;
-    font-size: 12px;
+    padding: 5px 12px;
+    font-size: 9px;
 }
 .row.content3 .glyphicon.glyphicon-remove{
     color: #fff;
 }
 .row.content4{
 	background-color: #f2f2f2;
-    margin: 50px 0 70px 0;
+    margin: 42px 0 90px 0;
 }
 .col-md-4.left, .col-md-6.left{
     line-height: 50px;
+    padding-left: 20px;
 }
 .pagination{
     margin:0; 
     float: right;
-    padding-top: 4px;
+    padding-top: 5px;
 }
 .pagination ul li a {
     color: black;
     float: left;
-    padding: 8px 16px;
+    padding: 6px 11px;
     text-decoration: none;
     transition: background-color 0.3s;
     border: none;
     background-color: transparent;
+    font-size: 13.08px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+.pagination span{
+    font-weight: 500;
 }
 .pagination ul li a:hover{
 	background-color: black;
 	color: white;
 }
 .pagination > .active > a{
-    background-color: #000;
+    background-color: #000000;
 }
 .pagination > .active > a:hover{
-    background-color: #000;
+    background-color: #000000;
+}
+.glyphicon.glyphicon-menu-left{
+    margin-right: 10px;
+    font-size: 10px;
+}
+.glyphicon.glyphicon-menu-right{
+    margin-left: 10px;
+    font-size: 10px;
 }
 .container-fluid{
 	background-color: #fafafa;
@@ -366,7 +424,7 @@ li.dropdown:hover > .dropdown-menu {
     padding-bottom: 70px;
 }
 .logo2{
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 }
 .col-md-4 .bottom span{
     padding-bottom: 30px;
@@ -399,13 +457,19 @@ li.dropdown:hover > .dropdown-menu {
     line-height: 50px; 
     margin-top: 40px;
     margin-left: 0;
+    margin-right: 15px;
+    font-size: 11px;
+
 }
 .row.sub input{
     border: none; 
     width: 70%;
     background-color: transparent;
     font-size: 14px;
-    padding-left: 10px;
+    padding-left: 18px;
+}
+.row.sub input::placeholder{
+    font-size: 11px;
 }
 .btnsubmit{
     border: none; 
@@ -415,6 +479,7 @@ li.dropdown:hover > .dropdown-menu {
     color: black; 
     font-weight: 500;
     text-transform: uppercase;
+    padding-top: 1px;
 }
 .btnsubmit:hover{
     background-color:#ff5346; 
@@ -429,15 +494,20 @@ li.dropdown:hover > .dropdown-menu {
     text-decoration: none; 
     line-height: 30px; 
     color: #929292;
+    font-size: 12px;
 }
 .bottom1 ul li a:hover{
     color: #ff5346; 
     transition: 0.3s;
 }
+.text-content2{
+    color: #929292;
+    font-size: 13px;
+}
 .list-tittle{
     font-size: 16px; 
-    font-weight: 400; 
-    margin-bottom: 38px;
+    font-weight: 500; 
+    margin-bottom: 40px;
 }
 .container-fluid.bottom{
     background-color: #1e1b1b; 
@@ -446,12 +516,13 @@ li.dropdown:hover > .dropdown-menu {
 }
 .bottom2 span{ 
     color: #959494;
+    font-size: 13px;
 }
 .img-bottom{
     margin-left: 30%;
 }
 .text-bottom{
-    padding-top: 10px;
+    padding-top: 12px;
     padding-bottom: 10px;
 }
 .sidemenu ul li{
@@ -474,32 +545,34 @@ li.dropdown:hover > .dropdown-menu {
     font-size: 12px;
     color: #929292;
     text-transform: none;
-    font-weight: normal;
+    font-weight: 500;
 }
 .sidemenu .menu-left-li ul li a:hover{
-    color: #000;
+    color: #000000;
 }
 .sidemenu ul li a:hover{
   text-decoration: none;
 }
 .sidemenu ul li a{
-  color: #000;
+  color: #000000;
 }
 .sidemenu ul li a i{
     font-weight: bold;
   float: right;
-  margin-right: 70px;
+  margin-right: 40px;
 }
 .button2{
     font-size:30px;
     cursor:pointer;
 }
 .menuleft{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 /*css checkbox*/
 .checkbox-button {
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .theloai input[type=checkbox] {
@@ -525,23 +598,24 @@ li.dropdown:hover > .dropdown-menu {
 .checkbox-button__control {
     position: relative;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 4px;
     margin-right: 12px;
     vertical-align: middle;
     background-color: inherit;
     color: #017b5f;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .checkbox-button__input:checked+.checkbox-button__control:after {
     content: "";
     display: block;
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 15px;
-    height: 15px;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
     background-color: black;
 }
 
@@ -635,7 +709,7 @@ transform: scale(1); }
     word-break: break-word; 
     line-height: 1; 
     font-size: 16px;
-    color: #000;
+    color: #000000;
 }
 .shopping-tittle a:hover{
     color: #ff5346;
@@ -911,20 +985,20 @@ transform: scale(1); }
         padding-top: 15px;
     }
     .row.sub input {
-        width: 60%;
+        width: 65%;
     }
     .btnsubmit{
-        width: 40%;
+        width: 35%;
     }
 }
 @media screen and (max-width: 767px){
     .row.content2 .col-md-6.price {
         line-height: 0;
-        margin-top:-35px;
+        margin-top:-26px;
     }
     .row.content2 .col-md-6.price .dropdown-menu {
-        line-height: 50px;
-        top:29px;
+        line-height: 40px;
+        top:22px;
     }
     .pagination {
         padding-top: 0;
@@ -1018,9 +1092,6 @@ transform: scale(1); }
 
 }
 @media screen and (max-width: 423px){
-    .pagination ul li a {
-        padding: 8px 15px;
-    }
     .row.sub input {
         width: 70%;
     }
@@ -1034,28 +1105,16 @@ transform: scale(1); }
         left: 15%;
     }
 }
-@media screen and (max-width: 393px){
-    .pagination ul li a {
-        padding: 7px 13px;
-    }
-}
-@media screen and (max-width: 360px){
-    .pagination ul li a {
-        padding: 5px 12px;
-    }
-    .row.sub input {
-        width: 65%;
-    }
-    .btnsubmit{
-        width: 35%;
-    }
-}
-@media screen and (max-width: 320px){
+@media screen and (max-width: 380px){
     .pagination ul li a {
         padding: 4px 9px;
     }
 }
-
+@media screen and (max-width: 350px){
+    .pagination ul li a {
+        padding: 1px 6px;
+    }
+}
 /*
 @media screen and (max-width: 1024px){
     .navbar-nav {
