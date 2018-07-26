@@ -399,7 +399,7 @@ li.dropdown:hover > .dropdown-menu {
     background-color: transparent;
     font-size: 13.08px;
     font-weight: 500;
-    margin-right: 5px;
+    margin: 0 5px;
 }
 .pagination span{
     font-weight: 500;
@@ -523,6 +523,9 @@ li.dropdown:hover > .dropdown-menu {
 .bottom2 span{ 
     color: #959494;
     font-size: 13px;
+}
+.glyphicon{
+    top:0;
 }
 .img-bottom{
     margin-left: 32%;
@@ -1029,7 +1032,7 @@ transform: scale(1); }
         margin-bottom: 10px;
     }
     .container.bottom {
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }
     .logo1 {
         display: none;
@@ -1069,13 +1072,15 @@ transform: scale(1); }
     }
 }
 @media screen and (max-width: 515px){
+    .pagination ul li a {
+        margin: 0 2px;
+    }
     .col-xs-3.bottom, .col-xs-4.bottom, .col-xs-5.bottom{
         width: 100%;
     }
-}
-@media screen and (max-width: 480px){
     .row.content2 .col-md-6.price {
         text-align: left;
+        padding-left: 20px;
         margin-top: 0;
         padding-bottom: 15px;
     }
@@ -1085,9 +1090,9 @@ transform: scale(1); }
     box-shadow:0 6px 12px rgba(0, 0, 0, .175);
     background-color: #fff;
     min-width: 100px;
-    width: 175px;
+    width: 182px;
     text-align: left;
-    left: 58px;
+    left: 63px;
     }
     .row.content2 .col-md-6.price .dropdown-menu li a {
         padding-left: 9px;
