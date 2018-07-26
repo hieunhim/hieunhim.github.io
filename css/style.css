@@ -5,10 +5,12 @@ body{
 .fa-angle-down.down1, .fa-angle-down.down2,.fa-angle-down.down-top1, .fa-angle-down.down-top2, .fa-angle-down.down-top2-1, .fa-angle-down.down-top2-2, .fa-angle-down.down-top2-3, .fa-angle-down.down-top3, .fa-angle-down.down-top4, .fa-angle-down.down-top5, .fa-angle-down.down-top6{
     display: inline-block;
     font-size: 12px;
+    padding-top: 3px;
 }
 .fa-angle-up.up1, .fa-angle-up.up2, .fa-angle-up.up-top1, .fa-angle-up.up-top2, .fa-angle-up.up-top2-1, .fa-angle-up.up-top2-2, .fa-angle-up.up-top2-3, .fa-angle-up.up-top3, .fa-angle-up.up-top4, .fa-angle-up.up-top5, .fa-angle-up.up-top6{
     display: none;
     font-size: 12px;
+    padding-top: 3px;
 }
 .ac-filter{
     margin-right: 7px;
@@ -29,12 +31,14 @@ body{
     width: 15px; 
     background: #000; 
     border-radius: 50%; 
-    text-align: center; 
+    padding-right: 4px;
     margin-right: -30px;
+    padding-top: 4px;
     margin-top: 10px; 
     color: #fff; 
-    font-size: 11px; 
+    font-size: 8px; 
     float: right;
+    font-weight: 500;
 }
 .row.logo .col-md-4.logo-right .logo-buy img {
     float: right;
@@ -61,7 +65,7 @@ body{
     width: 100%;
 }
 .nav > li > a {
-    padding: 25px 35px;
+    padding: 22px 35px;
     color: #161918;
 }
 .navbar-nav > li > a{
@@ -133,7 +137,7 @@ body{
 .navbar-collapse{
     padding-right: 0;
     padding-left: 0;
-    margin-left: 165px;
+    margin-left: 15%;
 }
 .navbar-inverse{
     border: none;
@@ -168,11 +172,11 @@ li.dropdown:hover > .dropdown-menu {
 }
 /*end menu*/
 .col-md-3.collapsee{
-    padding-top: 115px;
+    padding-top: 118px;
     padding-bottom: 50px;
 }
 .col-md-9.content{
-	padding-top: 115px;
+	padding-top: 118px;
 }
 .row.content1 h1{
 	margin:0;
@@ -189,7 +193,7 @@ li.dropdown:hover > .dropdown-menu {
     color: #000000;
 }
 .row.content1{
-	padding-bottom: 50px;
+	padding-bottom: 45px;
     margin: 0;
 }
 .row.content2{
@@ -277,7 +281,7 @@ li.dropdown:hover > .dropdown-menu {
     font-size: 12px;
 }
 .textsanpham{
-    padding-top: 23px; 
+    padding-top: 20px; 
     font-size: 14px;
 }
 .textsanpham a{
@@ -317,7 +321,7 @@ li.dropdown:hover > .dropdown-menu {
     margin-bottom: 20px;
 }
 .theloai{
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
     font-size: 14px;
     font-weight: 500;
 }
@@ -532,14 +536,14 @@ li.dropdown:hover > .dropdown-menu {
   font-size: 14px;
 }
 .sidemenu .menu-left-li{
-    padding-bottom: 20px;
+    padding-bottom: 23px;
     font-weight: 500;
 }
 .sidemenu .menu-left-li a:hover, active{
     color: #ff5346;
 }
 .sidemenu .menu-left-li ul li{
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .sidemenu .menu-left-li ul li a{
     font-size: 12px;
@@ -730,7 +734,7 @@ transform: scale(1); }
     float: right;
     margin-top:10px;
     cursor: pointer; 
-    text-align: center;
+    padding-left: 7px;
 }
 .shopping-remove:hover{
     background: #ff5346;
