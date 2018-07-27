@@ -290,7 +290,6 @@ li.dropdown:hover > .dropdown-menu {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 255px;
 }
 .textsanpham a{
     font-weight: 500;
